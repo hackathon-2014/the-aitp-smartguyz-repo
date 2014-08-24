@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Blue Screen SOS</title>
+</head><body>
+<script language="javascript">
+function fncSubmit()
+{
+	for(i=1;i<=document.form1.hdnLine.value;i++)
+	{
+		if(eval("document.form1.chk"+i+".checked")==false)
+		{
+			alert("Please Click Checkbox "+i+" Thank.");
+			return false;
+		}
+	}
+	document.form1.submit();
+}
+</script>
+<form action="page.cgi" method="post" name="form1" onsubmit="JavaScript:return fncSubmit();"><div style="text-align: center;">. <big style="font-weight: bold;">Hardware?</big> <input name="chk[]" id="chk1" value="Y" type="checkbox"><br>
+<big style="font-weight: bold;">&nbsp;</big><br><br><big style="font-weight: bold;">Software?</big>&nbsp;
+<input name="chk[]" id="chk2" value="Y" type="checkbox"><br></div>
+<br>
+&nbsp;&nbsp;<input style="font-weight: bold;" name="btnSubmit" value="Submit" type="submit">&nbsp;.
+</form>
+</body></html>

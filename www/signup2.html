@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+	<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+<title>Blue Screen SOS</title>
+</head><body>
+<script language="javascript">
+function fncSubmit()
+{
+	for(i=1;i<=document.form1.hdnLine.value;i++)
+	{
+		if(eval("document.form1.chk"+i+".checked")==false)
+		{
+			alert("Please Click Checkbox "+i+" Thank.");
+			return false;
+		}
+	}
+	document.form1.submit();
+}
+</script>
+<form action="page.cgi" method="post" name="form1" onsubmit="JavaScript:return fncSubmit();"><div style="text-align: center;">. <big style="font-weight: bold;">Hardware?</big> <input name="chk[]" id="chk1" value="Y" type="checkbox"><br>
+<big style="font-weight: bold;">&nbsp;</big><br><br><big style="font-weight: bold;">Software?</big>&nbsp;
+<input name="chk[]" id="chk2" value="Y" type="checkbox"><br></div>
+<br>
+&nbsp;&nbsp;<input style="font-weight: bold;" name="btnSubmit" value="Submit" type="submit">&nbsp;.
+</form>
+</body></html>

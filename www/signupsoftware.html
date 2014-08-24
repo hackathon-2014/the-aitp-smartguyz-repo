@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+<title>Blue Screen SOS</title>
+
+<style type="text/css"></style></head><body>
+<script language="javascript">
+07.
+function fncSubmit()
+08.
+{
+09.
+for(i=1;i<=document.form1.hdnLine.value;i++)
+10.
+{
+11.
+if(eval("document.form1.chk"+i+".checked")==false)
+12.
+{
+13.
+alert("Please Click Checkbox "+i+" Thank.");
+14.
+return false;
+15.
+}
+16.
+}
+17.
+document.form1.submit();
+18.
+}
+19. </script>
+<form action="page.cgi" method="post" name="form1" onsubmit="JavaScript:return fncSubmit();">
+<div style="text-align: center;">. <big style="font-weight: bold;"><br>
+<span style="text-decoration: underline;">Hardware Issues</span><br>
+<br>
+<br>
+</big><big style="font-weight: bold;">
+Power Issue?</big>&nbsp;
+<input name="chk[]" id="chk2" value="Y" type="checkbox">&nbsp;<br><big style="font-weight: bold;"><br><br>Disc Drive ?</big>&nbsp;
+<input name="chk[]" id="chk2" value="Y" type="checkbox"><br><span style="font-weight: bold;"><br><big><br>Screen Replacement ?</big></span><input name="chk[]" id="chk1" value="Y" type="checkbox"><br>
+.<br>
+<br>
+<big style="font-weight: bold;">&nbsp; Hard Drive?</big> &nbsp; &nbsp; <input name="chk[]" id="chk1" value="Y" type="checkbox"><big style="font-weight: bold;">&nbsp;</big><br>
+<br>
+<big style="font-weight: bold;"><br>
+Memory?</big>&nbsp;
+<input name="chk[]" id="chk2" value="Y" type="checkbox"><br>
+</div>
+<br>
+&nbsp;&nbsp;<a href="hardware%20issue.html" target="_self"><input style="font-weight: bold;" name="btnSubmit" value="Submit" type="submit"></a>&nbsp;.
+</form>
+</body></html>
